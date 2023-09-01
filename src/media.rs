@@ -41,6 +41,7 @@ impl Media {
     ("text/markdown;charset=utf-8", Media::Text, &["md"]),
     ("video/mp4", Media::Video, &["mp4"]),
     ("video/webm", Media::Video, &["webm"]),
+    ("text/plain", Media::Text, &["text"]),
   ];
 
   pub(crate) fn content_type_for_path(path: &Path) -> Result<&'static str, Error> {
